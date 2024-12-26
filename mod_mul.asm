@@ -1,7 +1,7 @@
 section .text 
-    global _mod_mul 
+    global mod_mul 
 
-_mod_mul:
+mod_mul:
     ;; (a * b) mod p ~ (a * b) % p
     mul rsi      ; compute rdi * rsi
     div rdx      ; rax = (a * b) / p , rdx = remainder

@@ -1,7 +1,7 @@
 section .text
-    global _mod_add
+    global mod_add
 
-_mod_add:
+mod_add:
     ;; set the variables for a & b
     ;; rdi = a rsi = b and rdx = p
     ;; (a + b) mod p
