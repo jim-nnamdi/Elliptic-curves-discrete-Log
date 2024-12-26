@@ -19,3 +19,22 @@ section .text
     mov r10, r8         
     mul r9
     call mod_add 
+    mov r10, rax
+
+    ; x_3 = m^2 - x1 - x2
+    mov r11, rax        ; rax = m
+    mul r11             ; rax = m * m
+    sub rax, rdi        ; rax = m^2 - x1
+    sub rax, rsi        ; rax = m^2 - x1 -x2
+    call mod_add        ; (rax) mod p  
+
+    ; y_3 = m * (x1 - x3) - y1
+    mov r12, rdi 
+    sub r12, rax
+    mul r10
+    sub rax, rsi
+    call mod_add 
+    ret 
+
+
+
