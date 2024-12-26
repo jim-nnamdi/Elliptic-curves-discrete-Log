@@ -1,4 +1,4 @@
-# secp256k1
+# Ecc Discrete Log
 Mathematically. secp256k1 is an elliptic curve which is defined over a set of finite fields `Fp` when we say finite, we mean the value ranges from `1 to p -1` where `p` is a prime number that ranges between `2 ^ 256 - 2 ^ 32 - 977 ` this is a very solid prime number which does not create extra spaces or holes in the algorithm. The name secp256k1 is derived because it's a secure algorithm which has about 256 bits of data and k1 is a special family of curves. 
 
 > secp256k1 is the elliptic curve used especially in Bitcoin for wallet transactions signing and verifications
